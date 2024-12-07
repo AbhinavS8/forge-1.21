@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "mobweapons:essence"
+    }
+  ],
+  "result": {
+    "count": 64,
+    "id": "minecraft:netherite_ingot"
+  }
+}
