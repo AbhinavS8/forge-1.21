@@ -1,6 +1,7 @@
 package net.dominosq.mobweapons;
 
 import com.mojang.logging.LogUtils;
+import net.dominosq.mobweapons.block.ModBlocks;
 import net.dominosq.mobweapons.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -69,6 +70,7 @@ public class MobWeapons
 
         //        // Register the Deferred Register to the mod event bus so items get registered
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -95,6 +97,10 @@ public class MobWeapons
         if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 //            event.accept(ModItems.KOK);
             event.accept(ModItems.ESSENCE);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.ALEXANDRITE_BLOCK);
         }
     }
 
