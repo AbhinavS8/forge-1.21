@@ -1,5 +1,7 @@
 {
   "item.mobweapons.kok": "Kok",
   "item.mobweapons.essence": "Essence",
-  "block.mobweapons.alexandrite_block": "Alexandrite Block"
+  "block.mobweapons.alexandrite_block": "Alexandrite Block",
+  "block.mobweapons.alexandrite_ore": "Alexandrite Ore"
+
 }

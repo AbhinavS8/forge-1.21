@@ -100,6 +100,7 @@ public class MobWeapons
         }
 
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.ALEXANDRITE_ORE);
             event.accept(ModBlocks.ALEXANDRITE_BLOCK);
         }
     }
