@@ -103,6 +103,9 @@ public class MobWeapons
             event.accept(ModBlocks.ALEXANDRITE_ORE);
             event.accept(ModBlocks.ALEXANDRITE_BLOCK);
         }
+        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ModItems.CHISEL_ITEM);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

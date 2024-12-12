@@ -1,6 +1,7 @@
 package net.dominosq.mobweapons.item;
 
 import net.dominosq.mobweapons.MobWeapons;
+import net.dominosq.mobweapons.item.custom.ChiselItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -16,6 +17,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> ESSENCE = ITEMS.register("essence",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> CHISEL_ITEM = ITEMS.register("chisel_item",
+            () -> new ChiselItem(new Item.Properties().durability(32)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
