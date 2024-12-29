@@ -1,6 +1,7 @@
 package net.dominosq.mobweapons.block;
 
 import net.dominosq.mobweapons.MobWeapons;
+import net.dominosq.mobweapons.block.custom.MagicBlock;
 import net.dominosq.mobweapons.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -31,6 +32,10 @@ public class ModBlocks {
             () -> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of()
                     .strength(4f)
                     .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> MAGIC_BLOCK = registerBlock("magic_block",
+            () -> new MagicBlock(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
